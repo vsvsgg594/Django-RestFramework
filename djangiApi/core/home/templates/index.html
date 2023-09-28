@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th{
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+   
+   
+    <div class="contanie">
+        <table>
+          
+            <tr>
+                <th>s.no</th>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+            {% for persons in person %}
+            <tr>
+               
+                <th>{{forloop.counter}}</th>
+                <th>{{persons.name}}</th>
+                <th>{{persons.age}}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {{list}}
+    <div class>
+        <tr>
+            <th>number :</th>
+        </tr>
+        {% for lists in list %}
+        <tr>
+            <th>{{lists.number}}</th>
+        </tr>
+
+      
+        {% endfor %} 
+    </div>
+   
+</body>
+</html>
